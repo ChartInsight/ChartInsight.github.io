@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Are Large Language Models Good Statisticians?</title>
+  <title>ChartInsights: Evaluating Multimodal Large Language Models for Low-Level Chart Question Answering?</title>
   <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 
 
@@ -90,31 +90,48 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Are Large Language Models Good Statisticians?</h1>
+          <h1 class="title is-1 publication-title">ChartInsights: Evaluating Multimodal Large Language Models for Low-Level Chart Question Answering?</h1>
           
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://derrickzhuyz.github.io/">Yizhang Zhu</a><sup>1</sup>,</span>
+              <a href="https://github.com/Evanwu1125">Yifan Wu</a><sup>1</sup>,</span>
             <span class="author-block">
-              Shiyin Du<sup>1</sup>,</span>
+              <a href="https://lutaoyan.github.io/">Yanlu Tao</a><sup>3</sup>,</span>
             <span class="author-block">
-              <a href="https://liboyan.vip/">Boyan Li</a><sup>1</sup>,
+              <a href="https://shenleixian.github.io/">Leixian Shen</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://luoyuyu.vip/">Yuyu Luo</a><sup>1,2</sup>,
+              <a href="https://www.yunhaiwang.net/">Yunhai Wang</a><sup>4</sup>,
             </span>
             <span class="author-block">
               <a href="https://nantang.github.io/">Nan Tang</a><sup>1,2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://luoyuyu.vip/">Yuyu Luo</a><sup>1,2</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou),</span>
             <span class="author-block"><sup>2</sup>The Hong Kong University of Science and Technology</span>
+            <span class="author-block"><sup>3</sup>South China University of Technology</span>
+            <span class="author-block"><sup>4</sup>Renmin University of China</span>
+          </div>
+
+          <!-- 新增的两个电子邮件地址 -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <i class="fas fa-envelope"></i> Yifan Wu: <span style="color: blue;">ywu012@connect.hkust-gz.edu.cn</span>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <i class="fas fa-envelope"></i> Yuyu Luo: <span style="color: blue;">yuyuluo@hkust-gz.edu.cn</span>
+            </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            </strong><span class="author-block" style="color: rgb(145, 107, 164); font-weight: bold;">NeurIPS 2024 (D&B)🎉</span>
+            </strong><span class="author-block" style="color: rgb(145, 107, 164); font-weight: bold;">🎉EMNLP 2024 (Findings)🎉</span>
           </div>
 
           <div class="column has-text-centered">
@@ -150,7 +167,7 @@
               </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/HKUSTDial/StatQA"
+                <a href="https://github.com/HKUSTDial/ChartInsights"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -160,7 +177,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://github.com/HKUSTDial/StatQA/tree/main/StatQA"
+                <a href="https://github.com/HKUSTDial/ChartInsights/tree/master/Dataset"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-database"></i>
@@ -178,70 +195,11 @@
 
 
 
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
 <section class="hero teaser">
   <div class="container is-max-desktop">
-      <img id="teaser" autoplay muted loop playsinline height="100%" src="./static/images/human_statistician_thinking.png"/>
-      <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\pipeline.png"/>
+      <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\chartinsights_pipeline.jpg"/>
       <h2 class="subtitle has-text-centered">
-        Statistical Analysis Task and StatQA Construction
+        An overview of Experimental Settings
       </h2>
   </div>
 </section>
@@ -255,37 +213,35 @@
         <h2 class="title is-2">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Large Language Models (LLMs) have demonstrated impressive capabilities across a range of scientific tasks including 
-            mathematics, physics, and chemistry. Despite their successes, the effectiveness of LLMs in handling complex statistical 
-            tasks remains systematically under-explored. To bridge this gap, we introduce <strong>StatQA</strong>, a new benchmark designed for 
-            statistical analysis tasks. StatQA comprises 11,623 examples tailored to evaluate LLMs' proficiency in specialized 
-            statistical tasks and their applicability assessment capabilities, particularly for hypothesis testing methods. 
+            Chart question answering (ChartQA) tasks play a critical role in interpreting and extracting insights from visualization charts. While recent advancements 
+            in multimodal large language models (MLLMs) like GPT-4o have shown promise in high-level ChartQA tasks, such as chart captioning, their effectiveness in low-level ChartQA tasks (<em>e.g.</em> identifying correlations) remains underexplored.
+            In this paper, we address this gap by evaluating MLLMs on low-level ChartQA using a newly curated dataset, <strong>ChartInsights</strong>,
+            which consists of 22,347 (chart, task, query, answer) covering 10 data analysis tasks across 7 chart types. 
           </p>
           <p>  
-            We systematically experiment with representative LLMs using various prompting strategies and show that even state-of-the-art 
-            models such as GPT-4o achieve a best performance of only 64.83%, indicating significant room for improvement. Notably, 
-            while open-source LLMs (<i>e.g.</i> LLaMA-3) show limited capability, those fine-tuned ones exhibit marked improvements, 
-            outperforming all in-context learning-based methods (<i>e.g.</i> GPT-4o).Moreover, our comparative human experiments highlight 
-            a striking contrast in error types between LLMs and humans: LLMs primarily make applicability errors, whereas humans mostly 
-            make statistical task confusion errors. This divergence highlights distinct areas of proficiency and deficiency, suggesting 
-            that combining LLM and human expertise could lead to complementary strengths, inviting further investigation into their 
-            collaborative potential.
+            We systematically evaluate 19 advanced MLLMs, including 12 open-source and 7 closed-source models. The average accuracy rate across these models is 39.8%, with GPT-4o achieving the highest accuracy at 69.17%.
+            To further explore the limitations of MLLMs in low-level ChartQA, we conduct experiments that alter visual elements of charts (<em>e.g.</em> changing color schemes, adding image noise) to assess their impact on the task effectiveness. 
+            Furthermore, we propose a new textual prompt strategy, <strong>Chain-of-Charts</strong>, tailored for low-level ChartQA tasks,  which boosts performance by 14.41%, achieving an accuracy of 83.58%. 
+            Finally, incorporating a visual prompt strategy that directs attention to relevant visual elements further improves accuracy to 84.32%. 
           </p>
           <p>Our contributions are summarized as follows:</p>
+          The key contributions are:
+
           <md-block>
-            - <strong>StatQA.</strong> We propose StatQA, a new benchmark for statistical analysis tasks, particularly focusing
-            on the applicability assessment of statistical methods. We introduce an automated pipeline to
-            construct StatQA by synthesizing statistical tasks and their corresponding answers, which also
-            provides insights for dataset construction in other specialized domains with scarce examples.
-            - <strong>Systematic Evaluation.</strong> We conduct extensive evaluations on widely used LLMs to establish
-            benchmarks for statistical tasks. We also explore several strategies, including domain-specific
-            prompts and fine-tuning, to better harness the capabilities of LLMs for these tasks.
-            - <strong>Comparative Study between Humans and LLMs.</strong> We organize group-based human experiments
-            and comparatively analyze differences between humans and LLMs in performance and
-            errors. Our findings highlight humans' and LLMs' distinct strengths and weaknesses and reveal
-            their potential complementarity.
-            - <strong>New Empirical Findings and Research Opportunities.</strong> Based on the experiments and analysis
-            above, we summarize six key findings and discuss research opportunities in this field.
+            - <strong>ChartInsights Dataset.</strong>  We curate ChartInsights, <strong>the first</strong> dataset for evaluating 
+            low-level data analysis tasks on charts. ChartInsights includes diverse chart variants, textual and visual prompts, 
+            and comprehensive metadata, enabling the investigation of MLLMs' performance across various low-level ChartQA scenarios.
+            - <strong>Systematic Evaluation.</strong> Our study establishes benchmarks by evaluating 19 MLLMs on 10 low-level 
+            ChartQA tasks, providing valuable insights into the current capabilities of MLLMs in processing and analyzing chart information.
+            - <strong>Provide meaningful insights.</strong> We summarize 11 experimental findings, highlighting the importance of visual prompts,
+             chart elements, and image quality in performing low-level ChartQA tasks.
+            We conduct a thorough analysis of the experimental results and identify 12 key findings. 
+            These insights emphasize the critical role of visual prompts, chart elements, and image quality in successfully performing low-level 
+            tasks.
+            - <strong>New Prompt Strategy.</strong> We introduce the <strong>Chain-of-Charts</strong> strategy, 
+            a new textual prompt designed to enhance MLLMs' reasoning capabilities in ChartQA tasks by leveraging a series of interconnected 
+            question-answer pairs to guide the model.
+ 
           </md-block>
           <!-- <p>&ensp;</p>
           <div class="container is-max-desktop">
@@ -320,37 +276,49 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
-        <h2 class="title is-2">StatQA Construction</h2>
+        <h2 class="title is-2">ChartInsights Construction</h2>
         <p>&ensp;</p>
         <div class="columns is-centered">
           <div class="content has-text-justified">
             <md-block>
-              In conventional dataset construction, researchers collect a suitable dataset D, formulate a question Q, 
-              and manually annotate answers A. While this method ensures high data quality, it is time-consuming, costly, 
-              and limits extensibility, especially in specialized domains with scarce examples. To alleviate these limitations, 
-              our key idea is to reverse this process by synthesizing the question Q based on target answers A. We start with 
-              target answers A derived from the tabular data D and generate corresponding statistical questions Q. This approach 
-              ensures precise alignment between questions and answers, enabling more efficient dataset construction.
-      
-              To implement this, we design an efficient pipeline for constructing StatQA, as shown in Figure below. Unlike traditional methods, 
-              we set target answers A based on tabular data D and then synthesize statistical questions Q in reverse. To ensure alignment 
-              between Q and A, we incorporate automated prerequisite checks. To support the evaluation of statistical literacy, the target 
-              answers A include relevant columns C and applicable statistical methods M, enabling the derivation of computational results R. 
-              Therefore, our pipeline can synthesize numerous examples of (D, C, M, Q, R) along with other supplementary information.
+              To fulfill our three design goals, our construc-
+              tion process begins with the collection of charts
+              with metadata from existing datasets. After
+              collecting and reviewing a large number of
+              datasets, we decided to extract charts from
+              nvBench and ChartQA. The reason is that most
+              charts in these two datasets contain numerical
+              information of elements, which can meet the
+              requirements for 10 low-level ChartQA tasks.
+              We extracted approximately 900 charts from
+              ChartQA and about 1100 charts from nvBench. Next,
+              we meticulously assign specific low-level data anal-
+              ysis tasks to appropriate chart types. Lastly, we
+              develop diverse textual prompt strategies, along
+              with visual variants and prompts, tailored to each
+              chart. Note that we save all metadata during the
+              construction process, which can make the users89,388 Questions customize their dataset based on ChartInsights easily.
+              
+              As shown in the construction pipeline of ChartInsights, the construction of our
+              ChartInsights consists of five steps: Candidate
+              Charts Selection, Low-Level Tasks Generation,
+              Textual Prompts Design, Visual Variants Gener-
+              ation, and Visual Prompts Design.
             </md-block>
             <p>&ensp;</p>
             <div class="container is-max-desktop">
-              <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\benchmark_example.png"/>
+              <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\chartinsights_construction.jpg"/>
               <h5 class="subtitle has-text-centered">
-                An Example in StatQA
+                Construction Pipeline of ChartInsights
               </h5>
             </div>
             <div class="container is-max-desktop">
-              <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\distribution.png"/>
+              <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\ChartInsights_stasitics.png"/>
               <h5 class="subtitle has-text-centered">
-                The Proportion of Statistical Tasks in StatQA
+                The Statistics of ChartInsights
               </h5>
             </div>
+
           </div>
         </div>
       </div>
@@ -368,35 +336,47 @@
       <p>&ensp;</p>
       <div class="columns is-centered">
         <div class="content has-text-justified">
-          <md-block>
-            <strong>Experimental Protocols.</strong> We design experiments for LLMs similar to human statisticians' mindset,
-            to evaluate the abilities of LLMs in statistical tasks. In the experiment, the LLMs need to pick
-            headers of relevant data columns, assess the methods' applicability, and select all statistical methods
-            that fit the usage scenario and prerequisites as statisticians, then respond in a specific format. In the human 
-            experiments, we use the same protocol for consistency and develop a testing platform to facilitate participant selection.
-            
-            
-            <strong>Metrics.</strong> Accuracy of relevant data columns and applicable methods selections, noted as Acc(C,M),
-            is used as our metrics to evaluate if LLMs or participants truly understand the question and the
-            applicability of statistical methods. Acc(C,M) refers to the proportion of methods and column
-            selections fully aligned with the ground truth without any omissions or incorrect selections.
+          The experiments we conducted are listed as follows:<br>
 
+          <md-block>
+            <strong>Exp1 Benchmarking MLLMs:</strong> <br>
+            We start by benchmarking the performance of widely used MLLMs across 10 
+            low-level ChartQA tasks involving 7 different types of charts. This experiment establishes a baseline for 
+            understanding the capabilities and limitations of MLLMs in low-level ChartQA tasks.
             
-            <strong>Results.</strong> We evaluate the performance of LLMs and compare it with human performance. The figures below show 
-            the best experimental results for each model, as well as a stacked histogram for error analysis. <strong><em>For full results and detailed 
-            analysis, please refer to our paper.</em></strong>
+            <strong>Exp-2 Impact of Question Types:</strong><br> We analyze how different question types influence MLLMs interactions
+            , helping to identify which types elicit the most accurate and informative responses.
+            
+            <strong>Exp-3 Textual Prompt Strategies:</strong><br> We investigate the effect of various textual prompt strategies, 
+            such as Chain-of-Thoughts, on MLLMs performance.
+
+            <strong>Exp-4 Impact of Visual Prompts:</strong><br> We conduct an in-depth exploration of the impact of visual prompts
+             on MLLMs performance to understand how guiding the MLLMs' attention to specific visual elements can enhance its 
+             analytical capabilities.
+
+             <strong>Exp-5 Impact of Chart Variantions:</strong><br> We vary chart elements to analyze how changes in color schemes
+             , view sizes, and legends affect the  performance.
+
+             <strong>Exp-6 Impact of Image Quality:</strong><br> We evaluate the effect of image quality by introducing various 
+             levels of image perturbations, such as noise and resolution changes, to understand the robustness of MLLMs 
+             in handling low-quality charts.
+
+             <strong>Exp-7 Synergistic Effects of Different Strategies:</strong><br> Finally, we explore the synergistic effects
+              of combining different question types, textual prompts, and visual prompts to enhance the overall performance
+               of MLLMs in low-level ChartQA tasks.
+
           </md-block>
           <p>&ensp;</p>
           <div class="container is-max-desktop">
-            <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\radar.png"/>
+            <img id="teaser" autoplay muted loop playsinline height="90%" src="static\images\CharInsights_results1.jpg"/>
             <h5 class="subtitle has-text-centered">
-              Best Results of Each Model in Sub-tasks.
+              Heatmap Results of Experiment 1 - 7
             </h5>
           </div>
           <div class="container is-max-desktop">
-            <img id="teaser" autoplay muted loop playsinline height="90%"src="static\images\error_bar_chart.png"/>
+            <img id="teaser" autoplay muted loop playsinline height="90%"src="static\images\ChartInsights_results2.jpg"/>
             <h5 class="subtitle has-text-centered">
-              Distribution of Error Categories Across Experiments
+              Radar Chart Results of Experiment 1 - 7
             </h5>
           </div>
         </div>
@@ -418,21 +398,51 @@
         <div class="content has-text-justified">
           <!-- <p>We summarize six key findings through our systematic experiments and analysis:</p> -->
           <md-block>
-            We summarize six key findings through our systematic experiments and analysis:
-            - Few-shot learning and the inclusion of domain knowledge are helpful for LLMs in this
-            task, whereas CoT is more likely to result in slight performance degradation in smaller models.
-            - LLMs with prompt-based approaches remain behind people in statistics. However, the
-            gap can be filled even surpassed by fine-tuning or introducing domain knowledge to a strong LLM.
-            - Humans and most LLMs are adept at descriptive statistics tasks but struggle with
-            contingency table and variance tests. Domain knowledge significantly boosts larger proprietary
-            LLMs' performance, notably GPT-4o, but has limited impact on smaller open-source models.
-            - LLaMA-3 and GPT models demonstrate a competent understanding of tasks and the
-            latter can accurately select data columns, but LLaMA-2 models have difficulties in these aspects.
-            - LLMs are good at distinguishing different statistical tasks then selecting associated
-            methods but struggle to utilize the domain knowledge to assess method applicability effectively.
-            Conversely, humans excel at discerning method applicability but are prone to task confusion.
-            - Humans and LLMs have distinct proficiencies and weaknesses in different aspects of
-            selecting applicable statistical tasks, highlighting the potential for complementary collaboration.
+            We summarize eleven key findings through our systematic experiments and analysis:
+            - Closed-Source models exhibit far superior generalization performance in low-level analysis tasks compared to open-source models.
+            - The ability of open-source models to understand low-level charts is not directly proportional to their number of model parameters.
+            - We find open-source models like ViP-LLaVA show higher accuracy on Yes-or-No questions because of a possible bias towards 'No' labels.
+            - The performance of GPT-4o declines
+            as task complexity increases, mirroring human
+            performance, but it has not yet matched the ana-
+            lytical capabilities of average humans.
+            - Structured textual prompts and can-
+            didate answers significantly enhance GPT-4o's
+            ability to reason out correct responses.
+            - Chain-of-Charts supplies GPT-4o
+            with accurate chart reference information, en-
+            hancing the model's comprehension and detailed
+            reasoning of chart structures and elements.
+            - Visual prompts greatly improve GPT-
+            4o's performance, showing the value of visual
+            information in aiding comprehension and reason-
+            ing.
+            - Different tasks require tailored visual
+            prompts for effective chart comprehension. Using
+            the same style of visual prompts across tasks can
+            have a negative impact on certain tasks.
+            - While most chart variants have a min-
+            imal impact on GPT-4o's performance, the ab-
+            sence of data labels significantly affects its accu-
+            racy. Additionally, larger labels and the removal
+            of data labels can actually enhance GPT-4o's per-
+            formance in anomaly detection and filtering tasks,
+            as it shifts its focus to visual comparisons
+            - GPT-4o's accuracy varies under
+            the influence of different types of noise on various
+            charts. Interestingly, there are instances where
+            the accuracy improves, particularly in visually
+            semantic tasks. This suggests that GPT-4o can
+            rely more on visual information when the textual
+            information is compromised.
+            - Combining visual prompts with the
+            Chain-of-Charts strategy significantly improves
+            the performance, suggesting that integrating mul-
+            tiple types of prompts can leverage their respec-
+            tive strengths.
+            - Adding a Visual Prompt im-
+            proves performance, but its impact is limited
+            when applied to the Chain-of-Charts strategy.
           </md-block>
           <p>&ensp;</p>
         </div>
@@ -443,20 +453,7 @@
 </section>
 
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <p>If you find our work useful or inspiring, please kindly cite:</p>
-    <pre><code>@misc{zhu2024large,
-      title={Are Large Language Models Good Statisticians?}, 
-      author={Yizhang Zhu and Shiyin Du and Boyan Li and Yuyu Luo and Nan Tang},
-      year={2024},
-      eprint={2406.07815},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
-}</code></pre>
-  </div>
-</section>
+
 
 
 <footer class="footer">
