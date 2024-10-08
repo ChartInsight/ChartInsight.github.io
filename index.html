@@ -96,7 +96,7 @@
             <span class="author-block">
               <a href="https://github.com/Evanwu1125">Yifan Wu</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://lutaoyan.github.io/">Lutao Yan</a><sup>3</sup>,</span>
+              <a href="https://lutaoyan.github.io/">Yanlu Tao</a><sup>3</sup>,</span>
             <span class="author-block">
               <a href="https://shenleixian.github.io/">Leixian Shen</a><sup>2</sup>,
             </span>
@@ -138,7 +138,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2406.07815"
+                <a href="https://arxiv.org/abs/2405.07001"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -147,7 +147,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2406.07815"
+                <a href="https://arxiv.org/abs/2405.07001"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -233,7 +233,7 @@
             and comprehensive metadata, enabling the investigation of MLLMs' performance across various low-level ChartQA scenarios.
             - <strong>Systematic Evaluation.</strong> Our study establishes benchmarks by evaluating 19 MLLMs on 10 low-level 
             ChartQA tasks, providing valuable insights into the current capabilities of MLLMs in processing and analyzing chart information.
-            - <strong>Provide meaningful insights.</strong> We summarize 11 experimental findings, highlighting the importance of visual prompts,
+            - <strong>Provide meaningful insights.</strong> We summarize 12 experimental findings, highlighting the importance of visual prompts,
              chart elements, and image quality in performing low-level ChartQA tasks.
             We conduct a thorough analysis of the experimental results and identify 12 key findings. 
             These insights emphasize the critical role of visual prompts, chart elements, and image quality in successfully performing low-level 
@@ -281,8 +281,7 @@
         <div class="columns is-centered">
           <div class="content has-text-justified">
             <md-block>
-              To fulfill our three design goals, our construc-
-              tion process begins with the collection of charts
+              To fulfill our three design goals, our construction process begins with the collection of charts
               with metadata from existing datasets. After
               collecting and reviewing a large number of
               datasets, we decided to extract charts from
@@ -292,8 +291,7 @@
               requirements for 10 low-level ChartQA tasks.
               We extracted approximately 900 charts from
               ChartQA and about 1100 charts from nvBench. Next,
-              we meticulously assign specific low-level data anal-
-              ysis tasks to appropriate chart types. Lastly, we
+              we meticulously assign specific low-level data analysis tasks to appropriate chart types. Lastly, we
               develop diverse textual prompt strategies, along
               with visual variants and prompts, tailored to each
               chart. Note that we save all metadata during the
@@ -302,8 +300,7 @@
               As shown in the construction pipeline of ChartInsights, the construction of our
               ChartInsights consists of five steps: Candidate
               Charts Selection, Low-Level Tasks Generation,
-              Textual Prompts Design, Visual Variants Gener-
-              ation, and Visual Prompts Design.
+              Textual Prompts Design, Visual Variants Generation, and Visual Prompts Design.
             </md-block>
             <p>&ensp;</p>
             <div class="container is-max-desktop">
@@ -398,51 +395,21 @@
         <div class="content has-text-justified">
           <!-- <p>We summarize six key findings through our systematic experiments and analysis:</p> -->
           <md-block>
-            We summarize eleven key findings through our systematic experiments and analysis:
-            - Closed-Source models exhibit far superior generalization performance in low-level analysis tasks compared to open-source models.
-            - The ability of open-source models to understand low-level charts is not directly proportional to their number of model parameters.
-            - We find open-source models like ViP-LLaVA show higher accuracy on Yes-or-No questions because of a possible bias towards 'No' labels.
-            - The performance of GPT-4o declines
-            as task complexity increases, mirroring human
-            performance, but it has not yet matched the ana-
-            lytical capabilities of average humans.
-            - Structured textual prompts and can-
-            didate answers significantly enhance GPT-4o's
-            ability to reason out correct responses.
-            - Chain-of-Charts supplies GPT-4o
-            with accurate chart reference information, en-
-            hancing the model's comprehension and detailed
-            reasoning of chart structures and elements.
-            - Visual prompts greatly improve GPT-
-            4o's performance, showing the value of visual
-            information in aiding comprehension and reason-
-            ing.
-            - Different tasks require tailored visual
-            prompts for effective chart comprehension. Using
-            the same style of visual prompts across tasks can
-            have a negative impact on certain tasks.
-            - While most chart variants have a min-
-            imal impact on GPT-4o's performance, the ab-
-            sence of data labels significantly affects its accu-
-            racy. Additionally, larger labels and the removal
-            of data labels can actually enhance GPT-4o's per-
-            formance in anomaly detection and filtering tasks,
-            as it shifts its focus to visual comparisons
-            - GPT-4o's accuracy varies under
-            the influence of different types of noise on various
-            charts. Interestingly, there are instances where
-            the accuracy improves, particularly in visually
-            semantic tasks. This suggests that GPT-4o can
-            rely more on visual information when the textual
-            information is compromised.
-            - Combining visual prompts with the
+            We summarize 12 key findings through our systematic experiments and analysis:
+            - <strong>Findings-1:</strong> Closed-Source models exhibit far superior generalization performance in low-level analysis tasks compared to open-source models.
+            - <strong>Findings-2:</strong> The ability of open-source models to understand low-level charts is not directly proportional to their number of model parameters.
+            - <strong>Findings-3:</strong> We find open-source models like ViP-LLaVA show higher accuracy on Yes-or-No questions because of a possible bias towards 'No' labels.
+            - <strong>Findings-4:</strong> The performance of GPT-4o declines as task complexity increases, mirroring human performance, but it has not yet matched the analytical capabilities of average humans.
+            - <strong>Findings-5:</strong> Structured textual prompts and candidate answers significantly enhance GPT-4o's ability to reason out correct responses.
+            - <strong>Findings-6:</strong> Chain-of-Charts supplies GPT-4o with accurate chart reference information, enhancing the model's comprehension and detailed reasoning of chart structures and elements.
+            - <strong>Findings-7:</strong> Visual prompts greatly improve GPT-4o's performance, showing the value of visual information in aiding comprehension and reasoning.
+            - <strong>Findings-8:</strong> Different tasks require tailored visual prompts for effective chart comprehension. Using the same style of visual prompts across tasks can have a negative impact on certain tasks.
+            - <strong>Findings-9:</strong> While most chart variants have a minimal impact on GPT-4o's performance, the absence of data labels significantly affects its accuracy. Additionally, larger labels and the removal of data labels can actually enhance GPT-4o's performance in anomaly detection and filtering tasks, as it shifts its focus to visual comparisons.
+            - <strong>Findings-10:</strong> GPT-4o's accuracy varies under the influence of different types of noise on various charts. Interestingly, there are instances where the accuracy improves, particularly in visually semantic tasks. This suggests that GPT-4o can rely more on visual information when the textual information is compromised.
+            - <strong>Findings-11:</strong> Combining visual prompts with the
             Chain-of-Charts strategy significantly improves
-            the performance, suggesting that integrating mul-
-            tiple types of prompts can leverage their respec-
-            tive strengths.
-            - Adding a Visual Prompt im-
-            proves performance, but its impact is limited
-            when applied to the Chain-of-Charts strategy.
+            the performance, suggesting that integrating multiple types of prompts can leverage their respective strengths.
+            - <strong>Findings-12:</strong> Adding a Visual Prompt improves performance, but its impact is limited when applied to the Chain-of-Charts strategy.
           </md-block>
           <p>&ensp;</p>
         </div>
